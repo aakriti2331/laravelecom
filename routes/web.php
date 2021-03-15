@@ -7,6 +7,7 @@ use App\Http\Controllers\ColorController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\TaxController;
+use App\Http\Controllers\UserlistController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -81,7 +82,11 @@ Route::group(['middleware'=>'admin_auth'],function(){
     Route::get('admin/tax/delete/{id}',[TaxController::class,'delete']);
     Route::get('admin/tax/status/{status}/{id}',[TaxController::class,'status']);
     
-    
+    Route::get('admin/userlists',[UserlistController::class,'index']);
+    Route::get('admin/userlists/show_userlists/{id}',[UserlistController::class,'show_userlists']);
+    Route::get('admin/userlists/status/{status}/{id}',[UserlistController::class,'status']);
+
+
     Route::get('admin/logout', function () {
         session()->forget('ADMIN_LOGIN');
         session()->forget('ADMIN_ID');

@@ -74,6 +74,11 @@
                             <a href="{{url('admin/product')}}">
                             <i class="fa fa-product-hunt"></i>Product</a>
                         </li>
+                        
+                        <li class="@yield('product_select')">
+                            <a href="{{url('admin/user')}}">
+                            <i class="fa fa-product-hunt"></i>User</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -129,7 +134,10 @@
                             <a href="{{url('admin/product')}}">
                             <i class="fa fa-product-hunt"></i>Product</a>
                         </li>
-
+                        <li class="@yield('user_select')">
+                            <a href="{{url('admin/userlists')}}">
+                            <i class="fa fa-user"></i>User</a>
+                        </li>
                         
                     </ul>
                 </nav>
