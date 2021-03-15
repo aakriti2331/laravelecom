@@ -60,6 +60,10 @@
                             <td>created at</td>
                             <td>{{$userlists->created_at}}</td>
                         </tr>
+                        <tr>
+                            <td>Updated at</td>
+                            <td>{{$userlists->updated_at}}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

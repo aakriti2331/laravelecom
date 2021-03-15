@@ -65,6 +65,11 @@
                                             <a href="{{asset('storage/media/category/'.$category_image)}}" target="_blank"><img width="100px" src="{{asset('storage/media/category/'.$category_image)}}"/></a>
                                         @endif
                                 </div>
+                                <div class="col-md-4">
+                                    <label for="is_home" class="control-label mb-1"> Show In Home</label><span><input id="is_home" name="is_home"  class="ml-2" aria-required="true" aria-invalid="false" type="checkbox"{{$is_home_selected}} checked></span>
+                                    
+                               
+                                </div>
                                 <div>
                                     <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
                                         Submit

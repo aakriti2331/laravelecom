@@ -86,7 +86,6 @@ Route::group(['middleware'=>'admin_auth'],function(){
     Route::get('admin/userlists/show_userlists/{id}',[UserlistController::class,'show_userlists']);
     Route::get('admin/userlists/status/{status}/{id}',[UserlistController::class,'status']);
 
-
     Route::get('admin/logout', function () {
         session()->forget('ADMIN_LOGIN');
         session()->forget('ADMIN_ID');

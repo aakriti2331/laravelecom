@@ -15,7 +15,7 @@ class UserlistController extends Controller
     public function show_userlists(Request $request,$id='')
     {
 
-        $arr=userlist::where(['id'=>$id])->get();
+        $arr=Userlist::where(['id'=>$id])->get();
         $result['userlists']=$arr['0'];
       //  dd($result);
         return view('admin/show_userlists',$result);

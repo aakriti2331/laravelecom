@@ -22,6 +22,7 @@
                             <th>Name</th>
                             <th>Email</th>
                             <th>Mobile</th>
+                            <th>Created At</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -32,6 +33,7 @@
                             <td>{{$list->name}}</td>
                             <td>{{$list->email}}</td>
                             <td>{{$list->mobile}}</td>
+                            <td>{{$list->created_at}}</td>
                             <td>
                                 <a href="{{url('admin/userlists/show_userlists/')}}/{{$list->id}}"><button type="button" class="btn btn-success">View</button></a>
 
