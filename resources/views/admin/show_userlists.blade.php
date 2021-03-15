@@ -56,6 +56,10 @@
                             <td>Status</td>
                             <td>{{$userlists->status}}</td>
                         </tr>
+                        <tr>
+                            <td>created at</td>
+                            <td>{{$userlists->created_at}}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

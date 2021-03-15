@@ -25,7 +25,7 @@
 
                                         <div class="col-md-4">
                                             <label for="category_name" class="control-label mb-1">Parent  Category</label>
-                                            <select id="parent_category_id" name="parent_category_id" class="form-control" required>
+                                            <select id="parent_category_id" name="parent_category_id" class="form-control" >
                                             <option value="">Select Categories</option>
                                             @foreach($category as $list)
                                             @if($parent_category_id==$list->id)
