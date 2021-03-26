@@ -1,6 +1,6 @@
 @extends('admin/layout')
 @section('page_title','userlists')
-@section('userlists_select','active')
+@section('User_select','active')
 @section('container')
     @if(session()->has('message'))
     <div class="sufee-alert alert with-close alert-success alert-dismissible fade show">
@@ -23,6 +23,7 @@
                             <th>Email</th>
                             <th>Mobile</th>
                             <th>Created At</th>
+                            <th>Updated At</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -34,6 +35,7 @@
                             <td>{{$list->email}}</td>
                             <td>{{$list->mobile}}</td>
                             <td>{{$list->created_at}}</td>
+                            <td>{{$list->updated_at}}</td>
                             <td>
                                 <a href="{{url('admin/userlists/show_userlists/')}}/{{$list->id}}"><button type="button" class="btn btn-success">View</button></a>
 

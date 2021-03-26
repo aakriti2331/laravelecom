@@ -28,4 +28,5 @@ class UserlistController extends Controller
         $request->session()->flash('message','User status updated');
         return redirect('admin/userlists');
     }
+    
 }

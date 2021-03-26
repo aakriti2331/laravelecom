@@ -58,7 +58,6 @@ Route::group(['middleware'=>'admin_auth'],function(){
     Route::get('admin/color/delete/{id}',[ColorController::class,'delete']);
     Route::get('admin/color/status/{status}/{id}',[ColorController::class,'status']);
 
-
     Route::get('admin/product',[ProductController::class,'index']);
     Route::get('admin/product/manage_product',[ProductController::class,'manage_product']);
     Route::get('admin/product/manage_product/{id}',[ProductController::class,'manage_product']);
