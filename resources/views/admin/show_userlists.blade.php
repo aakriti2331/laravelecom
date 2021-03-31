@@ -2,7 +2,6 @@
 @section('page_title','Show Userlists')
 @section('userlists_select','active')
 @section('container')
-     
     <h1>Show  User</h1>            
     <div class="row m-t-30">
         <div class="col-md-12">

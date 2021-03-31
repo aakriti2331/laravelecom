@@ -17,11 +17,12 @@ class UserlistController extends Controller
 
         $arr=Userlist::where(['id'=>$id])->get();
         $result['userlists']=$arr['0'];
-      //  dd($result);
+      //dd($result);
         return view('admin/show_userlists',$result);
     }
 
-    public function status(Request $request,$status,$id){
+    public function status(Request $request,$status,$id)
+    {
         $model=Userlist::find($id);
         $model->status=$status;
         $model->save();
