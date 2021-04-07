@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
-
-use App\Models\Category;
+namespace App\Http\Controllers\Admin;
+use App\http\Controllers\Controller;
+use App\Models\Admin\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Storage;
@@ -30,7 +30,7 @@ class CategoryController extends Controller
             if($arr['0']->is_home==1){
                 $result['is_home_selected']="checked";
             }
-
+            
             $result['id']=$arr['0']->id;
 
             $result['category']=DB::table('categories')->where(['status'=>1])->where('id','!=',$id)->get();
@@ -41,6 +41,9 @@ class CategoryController extends Controller
             $result['category_image']='';
             $result['is_home']='';
             $result['is_home_selected']="";
+            // if($arr['0']->is_home=1){
+            //     $result['is_home_selected']="checked";
+            // }
             $result['id']=0;
 
             $result['category']=DB::table('categories')->where(['status'=>1])->get();

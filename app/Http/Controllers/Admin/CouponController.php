@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
+use App\http\Controllers\Controller;
 
-use App\Models\Coupon;
+use App\Models\Admin\Coupon;
 use Illuminate\Http\Request;
-
 class CouponController extends Controller
 {
     /**

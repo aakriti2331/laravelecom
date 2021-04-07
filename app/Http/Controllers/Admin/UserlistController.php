@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
-
-use App\Models\Userlist;
+namespace App\Http\Controllers\Admin;
+use App\Http\Controllers\Controller;
+use App\Models\Admin\Userlist;
 use Illuminate\Http\Request;
 
 class UserlistController extends Controller
